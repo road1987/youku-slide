@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>slide demo</title>
+    <!-- <link rel="stylesheet" href="../jquery.youku-slide.css"> -->
+    <link rel="stylesheet" href="../posterTvGrid.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+    <div id="demo-slide">
+        <!-- <ul class="clearfix">
+            <li>
+                <a href="javascript:void(0);">
+                    <img src="imgs/1.jpg" class="slide-img">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img src="imgs/2.jpg" class="slide-img">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img src="imgs/3.jpg" class="slide-img">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img src="imgs/4.jpg" class="slide-img">
+                </a>
+            </li>
+        </ul> -->
+    </div>
+    <script src="http://cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
+    <!--<script src="../jquery.youku-slide.js"></script>-->
+    <script src="../posterTvGrid.js"></script>
+    <script>
+    $(document).ready(function() {
+        // $('.demo-slide').slide({ // interval: 5000 // });
+
+
+        new posterTvGrid(
+            'demo-slide', {
+                className: "posterTvGrid",
+                hotcode: true
+            }, [{
+                "img": "imgs/1.jpg",
+                "title": "",
+                "url": "#"
+            },
+            {
+                "img": "imgs/2.jpg",
+                "title": "",
+                "url": "#"
+            },{
+                "img": "imgs/3.jpg",
+                "title": "",
+                "url": "#"
+            },{
+                "img": "imgs/4.jpg",
+                "title": "",
+                "url": "#"
+            }]
+        );
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+.demo-slide{
+	position: relative;
+	width: 1050px;
+	height: 390px;
+	margin: 30px auto;
+	background: #eee;
+	overflow: hidden;
+}
+.demo-slide ul{
+	list-style: none;
+}
+.demo-slide li{
+	position: absolute;
+}
+.slide .slide-img{
+	display: block;
+	width: 685px;
+	height: 336px;
+}
